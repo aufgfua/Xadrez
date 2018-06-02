@@ -88,7 +88,7 @@
 
 			var win = $(window);
 			var x=0;
-			for(x=0;x<35;x++){
+			for(x=0;x<70;x++){
 
 				$.ajax({
 					url: 'jogos/jogo '+x+'.html',
@@ -104,7 +104,7 @@
 			}
 			win.scroll(function() {
 				if ($(document).height() - win.height() == win.scrollTop()) {
-					for(y=x;x<y+20;x++){
+					for(y=x;x<y+100;x++){
 						console.log(x);
 						$.ajax({
 							url: 'jogos/jogo '+x+'.html',
